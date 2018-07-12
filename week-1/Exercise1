@@ -1,0 +1,442 @@
+Script started on Wed May 30 21:40:41 2018
+]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004heecho hello world[?1l>[?2004l
+
+]2;echo hello world]1;echohello world
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hppasswd[?1l>[?2004l
+
+]2;passwd]1;passwdChanging password for zazu.
+Old Password:
+New Password:
+Retype New Password:
+passwd: authentication token failure
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hddate[?1l>[?2004l
+
+]2;date]1;dateWed May 30 21:40:57 EDT 2018
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hhhostname[?1l>[?2004l
+
+]2;hostname]1;hostnameZahids-MacBook-Pro.local
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004haarch[?1l>[?2004l
+
+]2;arch]1;archi386
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004huuptime[?1l>[?2004l
+
+]2;uptime]1;uptime21:41  up 122 days, 12:40, 3 users, load averages: 1.02 1.86 4.05
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hwwho am i[?1l>[?2004l
+
+]2;who am i]1;whozazu     ttys003  May 30 21:41 
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hwwho[?1l>[?2004l
+
+]2;who]1;whozazu     console  Jan 28 13:29 
+brittney console  Jan 28 08:05 
+zazu     ttys000  May 30 21:31 
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004httop[?1l>[?2004l
+
+]2;top]1;top[?1049h[1;40r(B[m[4l[?7h[?1034h[?1h=[H[2JProcesses: 575 total, 2 running, 573 sleeping, 2324 threads[1;132H21:41:11
+[2dLoad Avg: 0.86, 1.80, 4.00  CPU usage: 10.0% user, 24.0% sys, 66.0% idle  SharedLibs: 184M resident, 55M data, 56M linkedit.
+[3dMemRegions: 119241 total, 2315M resident, 148M private, 676M shared. PhysMem: 7654M used (2761M wired), 8729M unused.
+[4dVM: 2481G vsize, 1089M framework vsize, 357148877(0) swapins, 364158286(0) swapouts.
+[5dNetworks: packets: 52605981/63G in, 25389716/6116M out. Disks: 21994868/1728G read, 17871126/1669G written.
+[7dPID    COMMAND[21G%CPU TIME     #TH   #WQ  #PORT MEM    PURG   CMPRS  PGRP  PPID  STATE    BOOSTS[7;113H%CPU_ME %CPU_OTHRS UID
+[8d97101  installerdia 0.0  00:00.01 2     2    22+   4096B+ 0B     1524K+ 97101 1     sleeping *0[16+][8;113H0.00000 0.00000    0
+[9d97072  storagekitd  0.0  03:21.90 7     5    82+   1072K+ 0B     3472K+ 97072 1     sleeping *0[5+][9;113H0.00000 0.00000    0
+[10d90755  UserEventAge 0.0  00:47.52 5     2    793+  3096K+ 0B     1900K+ 90755 1     sleeping *0[1+][10;113H0.00000 0.00000    0
+[11d82766  fpsd[11;21H0.0  00:01.03 2     1    21+   4096B+ 0B     824K+  82766 1     sleeping *0[6817+][11;113H0.00000 0.00000    265
+[12d79863  adid[12;21H0.0  00:05.80 2     1    31+   2684K+ 0B     572K+  79863 1     sleeping *0[3111+][12;113H0.00000 0.00000    265
+[13d79713  syspolicyd   0.0  00:38.74 2     1    58+   1228K+ 0B     8792K+ 79713 1     sleeping *0[2377+][13;113H0.00000 0.00000    0
+[14d79644  iTunesHelper 0.0  00:11.44 4     2    119+  908K+  0B     1620K+ 79644 1     sleeping *0[2+][14;113H0.00000 0.00000    502
+[15d78260  IMRemoteURLC 0.0  00:09.86 4     2    79+   1384K+ 0B     2080K+ 78260 1     sleeping *0[203+][15;113H0.00000 0.00000    501
+[16d76955  com.apple.Co 0.0  00:04.40 2     2    41+   460K+  0B     2472K+ 76955 1     sleeping  0[0][16;113H0.00000 0.00000    502
+[17d76904  com.apple.Co 0.0  00:04.46 2     2    41+   436K+  0B     2568K+ 76904 1     sleeping  0[0][17;113H0.00000 0.00000    501
+[18d76801  setoken[21G0.0  00:04.96 2     1    129+  428K+  0B     1236K+ 76801 1     sleeping  0[0][18;113H0.00000 0.00000    501
+[19d72193  MTLCompilerS 0.0  00:04.26 2     2    32+   400K+  0B     10M+   72193 1     sleeping *0[2+][19;113H0.00000 0.00000    501
+[20d61052  openvpn[21G0.0  00:23.34 3     1    30+   172K+  0B     1380K+ 4736  4736  sleeping *0[1+][20;113H0.00000 0.00000    0
+[21d54524  top[21;21H0.0  00:00.24 1/1   0    14+   3928K+ 0B     0B     54524 54455 running  *0[1+][21;113H0.00000 0.00000    0
+[22d54455  zsh[22;21H0.0  00:00.15 1     0    19+   2220K+ 0B     0B     54455 54454 sleeping *0[1+][22;113H0.00000 0.00000    501
+[23d54454  script[21G0.0  00:00.01 1     0    13+   400K+  0B     0B     54454 54440 sleeping *0[1+][23;113H0.00000 0.00000    501
+[24d54440  bash[24;21H0.0  00:00.02 1     0    19+   716K+  0B     0B     54440 54299 sleeping *0[1+][24;113H0.00000 0.00000    501
+[25d54431  ocspd[25;21H0.0  00:00.01 2     1    33+   1796K+ 0B     0B     54431 1     sleeping *0[1+][25;113H0.00000 0.00000    0
+[26d54430  com.apple.iC 0.0  00:00.10 2     1    55+   3196K+ 0B     0B     54430 1     sleeping  0[0][26;113H0.00000 0.00000    502
+[27d54429  com.apple.iC 0.0  00:00.10 2     1    57+   3028K+ 0B     0B     54429 1     sleeping  0[0][27;113H0.00000 0.00000    501
+[28d54374  quicklookd   0.0  00:00.06 4     1    76+   3352K+ 28K+   0B     54374 1     sleeping  0[0][28;113H0.00000 0.00000    502
+[29d54373  quicklookd   0.0  00:00.06 4     1    81+   3296K+ 28K+   0B     54373 1     sleeping  0[0][29;113H0.00000 0.00000    501
+[30d54299  zsh[30;21H0.0  00:00.39 1     0    19+   2748K+ 0B     0B     54299 54298 sleeping *0[1+][30;113H0.00000 0.00000    501
+[31d54298  script[21G0.0  00:00.63 1     0    13+   452K+  0B     0B     54298 54133 sleeping *0[1+][31;113H0.00000 0.00000    501
+[32d54291  Google Chrom 0.0  00:03.58 15    1    139+  70M+   0B     0B     53094 53094 sleeping *0[1+][32;113H0.00000 0.00000    501
+[33d54133  zsh[33;21H0.0  00:00.23 1     0    19+   2244K+ 0B     0B     54133 54132 sleeping *0[1+][33;113H0.00000 0.00000    501
+[34d54132  script[21G0.0  00:00.47 1     0    13+   464K+  0B     0B     54132 54067 sleeping *0[1+][34;113H0.00000 0.00000    501
+[35d54090  Google Chrom 0.0  00:02.33 14    1    129+  37M+   0B     0B     53094 53094 sleeping *0[1+][35;113H0.00000 0.00000    501
+[36d54067  zsh[36;21H0.0  00:00.18 1     0    19+   2596K+ 0B     0B     54067 54066 sleeping *0[1+][36;113H0.00000 0.00000    501
+[37d54066  login[37;21H0.0  00:00.02 2     1    30+   1644K+ 0B     0B     54066 53960 sleeping *0[9+][37;113H0.00000 0.00000    0
+[38d53960  Terminal     0.0  00:34.34 9     4    392+  113M+  3212K+ 0B     53960 1     sleeping *0[178+][38;113H0.00000 0.00000    501
+[39d53949  mdworker     0.0  00:00.04 3     1    51+   3144K+ 0B     0B     53949 1     sleeping *0[1+][39;113H0.00000 0.00000    502
+[40d53945  mdworker     0.0  00:00.08 3     1    55+   3324K+ 0B     0B     53945 1     sleeping *0[1+][40;113H0.00000 0.00000    502[40;1H[?1049l
+[?1l>[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004heecho $shell[?1l>[?2004l
+
+]2;echo $shell]1;echo
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hecho $shell     SHELL[?1l>[?2004l
+
+]2;echo $SHELL]1;echo/bin/zsh
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hmman "automatic door"[?1l>[?2004l
+
+]2;man "automatic door"]1;manNo manual entry for automatic door
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;31m➜  [36mcs648[00m [K[?1h=[?2004hmman ls[?1l>[?2004l
+
+]2;man ls]1;man[?1049h[?1h=
+[m
+LS(1)                     BSD General Commands Manual                    LS(1)[m
+[m
+[1mNAME[0m[m
+     [1mls[0m -- list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mls[0m [[1m-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1[0m] [[4mfile[24m [4m...[24m][m
+[m
+[1mDESCRIPTION[0m[m
+     For each operand that names a [4mfile[24m of a type other than directory, [1mls[0m displays its name as well as any requested, associ-[m
+     ated information.  For each operand that names a [4mfile[24m of type directory, [1mls[0m displays the names of files contained within[m
+     that directory, as well as any requested, associated information.[m
+[m
+     If no operands are given, the contents of the current directory are displayed.  If more than one operand is given, non-[m
+     directory operands are displayed first; directory and non-directory operands are sorted separately and in lexicographical[m
+     order.[m
+[m
+     The following options are available:[m
+[m
+     [1m-@[0m      Display extended attribute keys and sizes in long ([1m-l[0m) output.[m
+[m
+     [1m-1[0m      (The numeric digit ``one''.)  Force output to be one entry per line.  This is the default when output is not to a[m
+             terminal.[m
+[m
+     [1m-A[0m      List all entries except for [4m.[24m and [4m..[24m.  Always set for the super-user.[m
+[m
+     [1m-a[0m      Include directory entries whose names begin with a dot ([4m.[24m).[m
+[m
+     [1m-B[0m      Force printing of non-printable characters (as defined by ctype(3) and current locale settings) in file names as[m
+             \[4mxxx[24m, where [4mxxx[24m is the numeric value of the character in octal.[m
+[m
+     [1m-b[0m      As [1m-B[0m, but use C escape codes whenever possible.[m
+[m
+     [1m-C[0m      Force multi-column output; this is the default when output is to a terminal.[m
+[m
+     [1m-c[0m      Use time when file status was last changed for sorting ([1m-t[0m) or long printing ([1m-l[0m).[m
+[m
+     [1m-d[0m      Directories are listed as plain files (not searched recursively).[m
+:[K
+[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hmman who[?1l>[?2004l
+
+]2;man who]1;man[?1049h[?1h=
+[m
+WHO(1)                    BSD General Commands Manual                   WHO(1)[m
+[m
+[1mNAME[0m[m
+     [1mwho[0m -- display who is logged in[m
+[m
+[1mSYNOPSIS[0m[m
+     [1mwho[0m [[1m-abdHlmpqrsTtu[0m] [[4mfile[24m][m
+     [1mwho[0m [4mam[24m [4mi[24m[m
+[m
+[1mDESCRIPTION[0m[m
+     The [1mwho[0m utility displays a list of all users currently logged on, showing for each user the login name, tty name, the[m
+     date and time of login, and hostname if not local.[m
+[m
+     Available options:[m
+[m
+     [1m-a[0m    Same as [1m-bdlprTtu[0m.[m
+[m
+     [1m-b[0m    Time of last system boot.[m
+[m
+     [1m-d[0m    Print dead processes.[m
+[m
+     [1m-H[0m    Write column headings above the regular output.[m
+[m
+     [1m-l[0m    Print system login processes (unsupported).[m
+[m
+     [1m-m[0m    Only print information about the current terminal.  This is the POSIX way of saying [1mwho[0m [4mam[24m [4mi[24m.[m
+[m
+     [1m-p[0m    Print active processes spawned by launchd(8) (unsupported).[m
+[m
+     [1m-q[0m    ``Quick mode'': List only the names and the number of users currently logged on.  When this option is used, all[m
+           other options are ignored.[m
+[m
+     [1m-r[0m    Print the current runlevel.  This is meaningless on Mac OS X.[m
+[m
+     [1m-s[0m    List only the name, line and time fields.  This is the default.[m
+[m
+     [1m-T[0m    Print a character after the user name indicating the state of the terminal line: `+' if the terminal is writable;[m
+           `-' if it is not; and `?' if a bad line is encountered.[m
+:[K
+[K
+[K:[K
+[K
+[K:[K
+[K[m
+:[K
+[K     [1m-t[0m    Print last system clock change (unsupported).[m
+:[K
+[K[m
+:[K
+[K     [1m-u[0m    Print the idle time for each user, and the associated process ID.[m
+:[K
+[K[m
+:[K
+[K     [4mam[24m [4mI[24m  Returns the invoker's real user name.[m
+:[K
+[K[m
+:[K
+[K     [4mfile[24m  By default, [1mwho[0m gathers information from the file [4m/var/run/utmpx[24m.  An alternative [4mfile[24m may be specified.[m
+:[K
+[K[m
+:[K
+[K[1mFILES[0m[m
+:[K
+[K     /var/run/utmpx[m
+:[K
+[K[m
+:[K
+[K[1mSEE[0m [1mALSO[0m[m
+:[K
+[K     last(1), mesg(1), users(1), getuid(2), utmpx(5)[m
+:[K
+[K[m
+:[K
+[K[1mSTANDARDS[0m[m
+:[K
+[K     The [1mwho[0m utility conforms to IEEE Std 1003.1-2001 (``POSIX.1'').[m
+:[K
+[K[m
+:[K
+[K[1mHISTORY[0m[m
+:[K
+[K     A [1mwho[0m utility appeared in Version 6 AT&T UNIX.[m
+:[K
+[K[m
+:[K
+[K[HM     [1m-d[0m    Print dead processes.[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     [1m-b[0m    Time of last system boot.[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     [1m-a[0m    Same as [1m-bdlprTtu[0m.[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     Available options:[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     date and time of login, and hostname if not local.[m
+[40;1H
+[K:[K
+[K[HM     The [1mwho[0m utility displays a list of all users currently logged on, showing for each user the login name, tty name, the[m
+[40;1H
+[K:[K
+[K[HM[1mDESCRIPTION[0m[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     [1mwho[0m [4mam[24m [4mi[24m[m
+[40;1H
+[K:[K
+[K[HM     [1mwho[0m [[1m-abdHlmpqrsTtu[0m] [[4mfile[24m][m
+[40;1H
+[K:[K
+[K[HM[1mSYNOPSIS[0m[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HM     [1mwho[0m -- display who is logged in[m
+[40;1H
+[K:[K
+[K[HM[1mNAME[0m[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K[HMWHO(1)                    BSD General Commands Manual                   WHO(1)[m
+[40;1H
+[K:[K
+[K[HM[m
+[40;1H
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K
+[K:[K
+[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hcclear[?1l>[?2004l
+
+]2;clear]1;clear[H[2J[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hccall  2000[?1l>[?2004l
+
+]2;cal 2000]1;cal                            2000
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5            1  2  3  4  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   5  6  7  8  9 10 11  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  12 13 14 15 16 17 18  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  19 20 21 22 23 24 25  
+23 24 25 26 27 28 29  27 28 29              26 27 28 29 30 31     
+30 31                                                             
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1      1  2  3  4  5  6               1  2  3  
+ 2  3  4  5  6  7  8   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  28 29 30 31           25 26 27 28 29 30     
+30                                                                
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+                   1         1  2  3  4  5                  1  2  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   3  4  5  6  7  8  9  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  10 11 12 13 14 15 16  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  17 18 19 20 21 22 23  
+23 24 25 26 27 28 29  27 28 29 30 31        24 25 26 27 28 29 30  
+30 31                                                             
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7            1  2  3  4                  1  2  
+ 8  9 10 11 12 13 14   5  6  7  8  9 10 11   3  4  5  6  7  8  9  
+15 16 17 18 19 20 21  12 13 14 15 16 17 18  10 11 12 13 14 15 16  
+22 23 24 25 26 27 28  19 20 21 22 23 24 25  17 18 19 20 21 22 23  
+29 30 31              26 27 28 29 30        24 25 26 27 28 29 30  
+                                            31                    
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hccal 9 1752[?1l>[?2004l
+
+]2;cal 9 1752]1;cal   September 1752     
+Su Mo Tu We Th Fr Sa  
+       1  2 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28 29 30  
+                      
+                      
+                      
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004heecho %=  5+4 | bc -l[?1l>[?2004l
+
+]2;echo 5+4 | bc -l]1;echo9
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004httime sleep 5[?1l>[?2004l
+
+]2;time sleep 5]1;timesleep 5  0.00s user 0.00s system 0% cpu 5.010 total
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hhhistory[?1l>[?2004l
+
+]2;fc -l 1]1;history    1  ...
+ 1606  bash
+ 1607  echo hello world
+ 1608  passwd
+ 1609  date
+ 1610  hostname
+ 1611  arch
+ 1612  uptime
+ 1613  who am i
+ 1614  who
+ 1615  top
+ 1616  echo $shell
+ 1617  echo $SHELL
+ 1618  man "automatic door"
+ 1619  man ls
+ 1620  man who
+ 1621  clear
+ 1622  cal 2000
+ 1623  cal 9 1752
+ 1624  echo 5+4 | bc -l
+ 1625  time sleep 5
+[1m[7m%[27m[1m[0m                                                                                                                                           
+ 
+]2;zazu@Zahids-MacBook-Pro]1;..cuments/cs648]7;file://Zahids-MacBook-Pro.local/Users/zazu/Documents/cs648
+[0m[27m[24m[J[01;32m➜  [36mcs648[00m [K[?1h=[?2004hq eexit[?1l>[?2004l
+
+]2;exit]1;exit
+Script done on Wed May 30 21:42:19 2018
