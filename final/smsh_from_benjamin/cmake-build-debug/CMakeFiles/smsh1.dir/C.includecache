@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/execute.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+signal.h
+-
+sys/wait.h
+-
+
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/smsh.h
+
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/smsh1.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+signal.h
+-
+smsh.h
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/smsh.h
+
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/splitline.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+smsh.h
+/Users/zazu/Documents/homework/cs648/final/smsh_from_benjamin/smsh.h
+

@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/smsh1.dir/smsh1.c.o CMakeFiles/smsh1.dir/splitline.c.o CMakeFiles/smsh1.dir/execute.c.o  -o smsh1 
