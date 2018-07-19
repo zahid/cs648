@@ -20,7 +20,9 @@ void setup() {
 
 int main() {
 //    char *cmd_lines, *prompt, **arg_list;
-    char **cmd_lines, *prompt, **arg_list;
+    char **cmd_lines;
+    char *prompt, **arg_list;
+
     int result;
     void setup();
 
@@ -35,25 +37,18 @@ int main() {
         int command_ptr = 0;
 
         while (cmd_lines[command_ptr] != NULL) {
-            printf(" DEBUG command is: %s\n", cmd_lines[command_ptr]);
+//            printf(" DEBUG command is: %s\n", cmd_lines[command_ptr]);
 
-            if( (arg_list = splitline(command_ptr)) != NULL) {
-                printf(" DEBUG About to execute %s\n", arg_list[0]);
-//                result = execute(arg_list);
-//                printf(" DEBUG Command: %s Got result: %d\n", arg_list[0], result);
+            if( (arg_list = splitline(cmd_lines[command_ptr])) != NULL) {
+//                printf(" DEBUG about to execute: `%s`\n", arg_list[0]);
+                result = execute(arg_list);
+                printf("\n");
             }
 
             command_ptr++;
         }
-//
-//            if( (arg_list = splitline(&cmd_lines[i])) != NULL) {
+        freelist(cmd_lines[command_ptr]); // free the list
 
-//            freelist(arg_list);
-//            //free(&cmd_lines[i]); // free each item
-////            free(cmd_lines[i]); // free each item
-//        }
-   ///     //freelist(&cmd_lines); // free the list
-//        freelist(cmd_lines); // free the list
     }
     return 0;
 }

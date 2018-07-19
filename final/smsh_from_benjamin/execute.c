@@ -26,11 +26,11 @@ int execute(char *argv[]) {
         signal(SIGINT, SIG_DFL);
         signal(SIGQUIT, SIG_DFL);
         execvp(argv[0], argv);
-        perror("Cant execute command\n");
+        perror("Cant execute command!");
         exit(1);
     } else {
         if ( wait(&child_info) == -1 ) {
-            perror("wait error!\n");
+            perror("wait error!");
         }
     }
     return child_info;

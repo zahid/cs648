@@ -23,6 +23,7 @@ char *newstr(char *s, int length) {
 void freelist(char **list) {
     char **cp = list;
     while(*cp) {
+        printf(" DEBUG About to free *cp=%d\n", cp);
         free(*cp++);
     }
     free(list);
@@ -52,48 +53,51 @@ void * erealloc(void *p, size_t n) {
  * */
 char ** next_cmd(char *prompt, FILE *fp) {
 
+    /**
+     * Commands will hold the a list of pointers.
+     * Buffer is a char array holding the text for the command.
+     * All of the elements in commands will point to an instance of *buf
+     */
     char **commands;
     int spots = 0; // spots in the table
     int commands_buf_space = 0; // bytes in table
-    int commands_num = 0; // slots used
-
-    char *start;
-    int len;
+    int commands_position = 0; // slots used
 
     commands = emalloc(BUFSIZ);
     commands_buf_space = BUFSIZ;
     spots = BUFSIZ / sizeof(char *);
 
-
-
-    char *buf; // buffer <- this list will hold the command (s).
+    char *buf = NULL; // buffer <- this list will hold the command (s).
     int buf_space = 0; // total size
     int buf_position = 0; // current positon
+
+
     int c; // input char
     printf("%s", prompt);
 
     // get characters until end of file
     while ( (c = getc(fp)) != EOF ) {
-        // make sure the array has space, reallocate as needed
-        // add extra spot for NULL terminal
-        if (commands_num+1 >= spots) {
-//            commands = erealloc(commands, commands_buf_space + BUFSIZ);
-//            commands_buf_space += BUFSIZ;
-//            spots += (BUFSIZ/sizeof(char *));
-            if (commands_num + 1 >= commands_buf_space) {
+        /*
+         * Do the initial memory allocation for the *commands and *buf char arrays.
+         * Ensure they have enough space, re-allocate more memory as needed.
+         * Add extra spot in buf for NULL terminal
+         * */
+        if (commands_position+1 >= spots) {
+            if (commands_position + 1 >= commands_buf_space) {
                 commands = emalloc(BUFSIZ);
+                printf(" DEBUG allocated space to commands");
             } else {
                 commands = erealloc(commands, commands_buf_space + BUFSIZ);
             }
+            commands_buf_space += BUFSIZ;
+
         }
 
-        // dynamically allocate more space for a single command
-        // first check if we have enough space in the buffer to keep writing to it
-        // this is where we dynamically allocate memory to buf
         if (buf_position + 1 >= buf_space) {
-            if (buf_space == 0) { // initial allocation of memory for buf
+            if (buf_space == 0) {
                 buf = emalloc(BUFSIZ);
-            } else { // need to re-allocate memory for buf
+            } else {
+                printf(" DEBUG allocated space to buf");
                 buf = erealloc(buf, buf_space + BUFSIZ);
             }
             buf_space += BUFSIZ;
@@ -101,14 +105,14 @@ char ** next_cmd(char *prompt, FILE *fp) {
 
 
         if (c == ';') {
-            buf[buf_position] = '\0'; //todo: can we remove this?
-
-            commands[commands_num++] = newstr(buf, buf_position);
-            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_num-1], commands_num-1);
+            buf[buf_position] = '\0';
+            commands[commands_position] = newstr(buf, buf_position);
+            commands_position++;
 
             buf_position=0;
-            free(buf);
             buf = emalloc(BUFSIZ);
+
+            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
             continue;
         }
 
@@ -117,13 +121,16 @@ char ** next_cmd(char *prompt, FILE *fp) {
         if (c == '\n') {
             // null terminate buf string
             // TODO: Fix issue with trailing command and no semicolon -> pwd;whoami
-            buf[buf_position] = '\0'; // todo: can we remove this
+            buf[buf_position] = '\0';
 
-            commands[commands_num++] = newstr(buf, buf_position);
+            commands_position++;
+
+            commands[commands_position] = newstr(buf, buf_position);
 
             buf_position=0;
-            free(buf);
             buf = emalloc(BUFSIZ);
+
+            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
             break; // we're done parsing
         }
 
@@ -138,9 +145,9 @@ char ** next_cmd(char *prompt, FILE *fp) {
         return NULL;
     }
 
-    commands[commands_num] = NULL;
+    commands[commands_position] = NULL;
 
-//    for(int i = 0; i <= commands_num; i++) {
+//    for(int i = 0; i <= commands_position; i++) {
 //        printf(" DEBUG Printing commands[%d]=%s\n", i, commands[i]);
 //    }
 
