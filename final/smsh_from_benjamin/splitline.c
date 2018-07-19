@@ -23,7 +23,7 @@ char *newstr(char *s, int length) {
 void freelist(char **list) {
     char **cp = list;
     while(*cp) {
-        printf(" DEBUG About to free *cp=%d\n", cp);
+        printf(" DEBUG About to free cp=%d *cp=%d &cp=%d\n", cp, *cp, &cp);
         free(*cp++);
     }
     free(list);
@@ -112,25 +112,21 @@ char ** next_cmd(char *prompt, FILE *fp) {
             buf_position=0;
             buf = emalloc(BUFSIZ);
 
-            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
+//            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
             continue;
         }
 
         // parsing
         // are we at the end of the line?
         if (c == '\n') {
-            // null terminate buf string
-            // TODO: Fix issue with trailing command and no semicolon -> pwd;whoami
             buf[buf_position] = '\0';
-
-            commands_position++;
-
             commands[commands_position] = newstr(buf, buf_position);
+            commands_position++;
 
             buf_position=0;
             buf = emalloc(BUFSIZ);
 
-            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
+//            printf(" DEBUG Stored %s in commands[%d]\n", commands[commands_position-1], commands_position-1);
             break; // we're done parsing
         }
 
@@ -146,10 +142,6 @@ char ** next_cmd(char *prompt, FILE *fp) {
     }
 
     commands[commands_position] = NULL;
-
-//    for(int i = 0; i <= commands_position; i++) {
-//        printf(" DEBUG Printing commands[%d]=%s\n", i, commands[i]);
-//    }
 
     return commands;
 }

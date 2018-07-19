@@ -1,0 +1,9 @@
+#!/bin/bash
+
+grep $* directory
+if [ $? -eq 0 ]
+then 
+    echo "there is a match";
+else
+    echo "there is no match";
+fi

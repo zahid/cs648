@@ -17,7 +17,7 @@ int execute(char *argv[]) {
     int child_info = -1;
 
     if (argv[0] == NULL) {
-        printf("argv[0] is NULL!\n");
+//        printf("argv[0] is NULL!\n");
         return 0;
     }
     if ( (pid = fork()) == -1 ) {

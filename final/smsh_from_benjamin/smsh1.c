@@ -29,8 +29,6 @@ int main() {
     prompt = DFL_PROMPT;
     setup();
 
-    // does this need to be dynamic?
-    // problem 9.4: update next_cmd to return a list of lists full of commands
 
     while( (cmd_lines = next_cmd(prompt, stdin)) != NULL ) {
 
@@ -42,14 +40,13 @@ int main() {
             if( (arg_list = splitline(cmd_lines[command_ptr])) != NULL) {
 //                printf(" DEBUG about to execute: `%s`\n", arg_list[0]);
                 result = execute(arg_list);
-                printf("\n");
             }
 
             command_ptr++;
         }
-        freelist(cmd_lines[command_ptr]); // free the list
-
+//        freelist(cmd_lines[command_ptr]); // free the list
     }
+
     return 0;
 }
 

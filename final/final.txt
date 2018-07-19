@@ -1,0 +1,39 @@
+1a) ls /home/you/books/ch1? 
+1b) ls /home/you/books/.ch*
+1c) ls /home/you/books/{ch1,ch10,.ch11}
+
+2) find . -size +2M
+
+3a) /teechers 
+3b) %s/teechers/teachers/g
+
+4a) chmod a+x drama 
+4b) cp drama drama2
+4c) mv drama /home/stuff/
+
+5a) 
+```
+#!/bin/bash
+ls -p | grep -v / | sort
+```
+
+5b) ls | xargs grep -o "zahid"
+
+6)
+```
+grep $* directory
+if [ $? -eq 0 ]
+then 
+    echo "there is a match";
+else
+    echo "there is no match";
+fi
+```
+
+7) See attached problem_7.c
+
+8) See attached problem_8.c
+
+9) See attached problem_9.c
+
+10) See attached problem_10.c
